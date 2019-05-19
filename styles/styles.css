@@ -279,3 +279,67 @@ iframe {
     height: 100%;
   }
 }
+
+@media only screen and (max-device-width: 815px) {
+  header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "logo"
+      "nav";
+  }
+  
+  #name {
+    flex-direction: column;
+    height: auto;
+    justify-items: center;
+  }
+  
+  #nav-bar {
+    margin-right: auto;
+  }
+
+  nav {
+    height: 100px;
+    justify-self: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "about"
+      "performances"
+      "contact";
+  }
+
+  #performances-body {
+    width: 80%;
+  }
+
+  .video {
+    width: 100%;
+    align-items: center;
+  }
+
+  .only-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+
+  .caption {
+    width: 89%;
+    margin: 5px auto 0 auto;
+    word-wrap: break-word;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
