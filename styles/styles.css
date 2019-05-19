@@ -1,3 +1,8 @@
+/* #name {
+  display: flex;
+  flex-direction: row;
+} */
+
 * {
   margin: 0;
   font-family: "Playfair Display";
@@ -43,6 +48,7 @@ h3 {
 .content {
   position: relative;
   width: 80%;
+  /*background: pink;*/
   background: #FFD8D8;
   margin: 0 auto 0 auto;
 }
@@ -168,8 +174,6 @@ section {
 }
 
 .video {
-  width: 560px;
-  height: auto;
   margin: 2.5em 0 2.5em 0;
 }
 
@@ -209,19 +213,13 @@ section {
   padding: 0 10px 0 10px;
 }
 
-iframe {
-  width: 560px;
-  height: 315px;
-}
 
 
-
-@media only screen and (max-width: 815px) {
+/*@media (max-width: 400px) {
   header {
     position: relative;
-    width: 100%;
     height: auto;
-    grid-template-columns: 100%;
+    grid-template-columns: auto;
     grid-template-rows: auto auto;
     grid-template-areas:
       "logo"
@@ -229,16 +227,9 @@ iframe {
   }
   
   #name {
-    flex-direction: column;
-    height: auto;
-/*  margin-left: 10px;*/
-    justify-items: center;
+    justify-self: center;
   }
   
-  #nav-bar {
-    margin-right: auto;
-  }
-
   nav {
     height: 100px;
     justify-self: center;
@@ -249,35 +240,4 @@ iframe {
       "performances"
       "contact";
   }
-
-  #performances-body {
-    width: 80%;
-  }
-
-  .video {
-    width: 100%;
-    align-items: center;
-  }
-
-  .only-video {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-  }
-
-  .caption {
-    width: 89%;
-    margin: 5px auto 0 auto;
-    word-wrap: break-word;
-  }
-
-
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
+}*/
